@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420" role="img" aria-labelledby="title desc">
+  <title id="title">Vertex shader and fragment shader</title>
+  <desc id="desc">A diagram explaining vertex shader and fragment shader stages.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="420" fill="#ffffff"/>
+  <text x="48" y="54" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="28" font-weight="700" fill="#0f172a">Shader：运行在 GPU 上的小程序</text>
+  <text x="48" y="86" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" fill="#475569">Three.js 的普通材质背后也有 shader，只是多数时候不用你亲手写。</text>
+
+  <g font-family="Arial, 'Microsoft YaHei', sans-serif">
+    <rect x="75" y="145" width="200" height="130" rx="8" fill="#f1f5f9" stroke="#64748b"/>
+    <text x="175" y="184" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">输入数据</text>
+    <text x="175" y="214" text-anchor="middle" font-size="15" fill="#475569">顶点 position</text>
+    <text x="175" y="238" text-anchor="middle" font-size="15" fill="#475569">UV / normal</text>
+
+    <line x1="275" y1="210" x2="360" y2="210" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="370" y="125" width="230" height="170" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="485" y="167" text-anchor="middle" font-size="21" font-weight="700" fill="#1e3a8a">Vertex Shader</text>
+    <text x="485" y="199" text-anchor="middle" font-size="15" fill="#1d4ed8">每个顶点执行一次</text>
+    <text x="485" y="225" text-anchor="middle" font-size="15" fill="#1d4ed8">决定点的位置</text>
+    <text x="485" y="251" text-anchor="middle" font-size="15" fill="#1d4ed8">也可做波动/变形</text>
+
+    <line x1="600" y1="210" x2="690" y2="210" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="645" y="190" text-anchor="middle" font-size="14" fill="#475569">光栅化</text>
+
+    <rect x="700" y="125" width="230" height="170" rx="8" fill="#fee2e2" stroke="#ef4444"/>
+    <text x="815" y="167" text-anchor="middle" font-size="21" font-weight="700" fill="#7f1d1d">Fragment Shader</text>
+    <text x="815" y="199" text-anchor="middle" font-size="15" fill="#991b1b">每个像素/片元执行</text>
+    <text x="815" y="225" text-anchor="middle" font-size="15" fill="#991b1b">采样贴图和光照</text>
+    <text x="815" y="251" text-anchor="middle" font-size="15" fill="#991b1b">输出最终颜色</text>
+
+    <line x1="930" y1="210" x2="995" y2="210" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="1003" y="166" width="55" height="88" rx="8" fill="#ecfdf5" stroke="#10b981"/>
+    <text x="1030" y="203" text-anchor="middle" font-size="18" font-weight="700" fill="#065f46">颜色</text>
+    <text x="1030" y="228" text-anchor="middle" font-size="14" fill="#047857">像素</text>
+  </g>
+</svg>
